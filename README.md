@@ -17,8 +17,11 @@
 
 
 **CLOUD** diberikan IP TUNTAP.
+
 **Server** diberikan IP DMZ.
+
 Berikan memori sebesar **64MB** pada setiap UML.
+
 
 ## Soal 1
 
@@ -103,13 +106,31 @@ Pada PASURUAN, buka router PASURUAN dan pilih tab Config. Pada bagian Interface 
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruanfe10.jpg)
 
-Berikutnya pada SIDOARJO, pilih tab DESKTOP. Pada IP Configurastion, masukkan `NID Subnet A9 + 1` dan Netmask:
+Berikutnya pada SIDOARJO, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A9 + 1` dan Netmask:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sidoarjo.jpg)
 
+Sehingga akan diperoleh hasil sebagai berikut:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruansidoarjo.jpg)
 
 * Konfigurasi Interface Router - Server
 
+Hal yang sama pada interface Router - Server seperti halnya Router - Client
+
+Lakukan konfigurasi interface untuk SURABAYA dan MOJOKERTO (Subnet A1 - Server). Hal pertama yang dilakukan yaitu melihat ethernet pada SURABAYA dan MOJOKERTO. Melalui gambar topologi, keduanya terhubung oleh SURABAYA (Fa 1/1) dan MOJOKERTO (Fa 0).
+
+Pada SURABAYA, buka router SURABAYA dan pilih tab Config. Pada bagian Interface (1/1), masukkan `NID Subnet A1 + 1` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbyfe11.jpg)
+
+Berikutnya pada MOJOKERTO, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A1 + 1` dan Netmask:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/mojokerto.jpg)
+
+Sehingga akan diperoleh hasil sebagai berikut:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayamojokerto.jpg)
 
 
 * Penerapan Routing
