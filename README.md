@@ -16,11 +16,9 @@
 ![soal](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/soal.jpg)
 
 
-**CLOUD** diberikan IP TUNTAP.
-
-**Server** diberikan IP DMZ.
-
-Berikan memori sebesar **64MB** pada setiap UML.
+* **CLOUD** diberikan IP TUNTAP.
+* **Server** diberikan IP DMZ.
+* Berikan memori sebesar **64MB** pada setiap UML.
 
 
 ## Soal 1
@@ -158,7 +156,7 @@ Buka **PASURUAN** dan buka tab Config pilih Static dan masukkan Network, Mask, N
 
 Default berarti Network dan Mask dimasukkan nilai `0.0.0.0` dan `0.0.0.0` dan Next Hop dimasukkan IP Interface menuju router **SURABAYA** dengan Etehernet (0/1). Router **SURABAYA** memiliki tampilan sebagai berikut:
 
-![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/default.jpg)
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbydefault.jpg)
 
 *Cisco file* topologi dapat diakses pada link [berikut](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/C12_Topologi%20Modul%204.pkt).
 
@@ -166,11 +164,9 @@ Default berarti Network dan Mask dimasukkan nilai `0.0.0.0` dan `0.0.0.0` dan Ne
 
 ![soal](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/soal.jpg)
 
-**CLOUD** diberikan IP TUNTAP.
-
-**Server** diberikan IP DMZ.
-
-Berikan memori sebesar **64MB** pada setiap UML.
+* **CLOUD** diberikan IP TUNTAP.
+* **Server** diberikan IP DMZ.
+* Berikan memori sebesar **64MB** pada setiap UML.
 
 ## Soal 2
 
