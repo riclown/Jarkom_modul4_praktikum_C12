@@ -80,7 +80,7 @@ Sehingga dari hasil yang ditemukan, akan diperoleh NID untuk setiap subnet. Netm
 
 Setelah itu dapat dibuat bentuk topologinya pada *Cisco (CPT)*.
 
-* Konfigurasi Interface Router - Router
+* **Konfigurasi Interface Router - Router**
 
 Dalam hal ini akan dilakukan konfigurasi interface untuk SURABAYA dan PASURUAN (Subnet A3). Hal pertama yang dilakukan yaitu melihat ethernet pada SURABAYA dan PASURUAN. Melalui gambar topologi, keduanya terhubung oleh SURABAYA (Fa 0/1) dan PASURUAN (Fa 0/0).
 
@@ -98,7 +98,7 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke PASURUAN.
 
-* Konfigurasi Interface Router - Client
+* **Konfigurasi Interface Router - Client**
 
 Lakukan konfigurasi interface untuk PASURUAN dan SIDOARJO (Subnet A9). Hal pertama yang dilakukan yaitu melihat ethernet pada PASURUAN dan SIDOARJO. Melalui gambar topologi, keduanya terhubung oleh PASURUAN (Fa 1/0) dan SIDOARJO (Fa 0).
 
@@ -114,7 +114,9 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruansidoarjo.jpg)
 
-* Konfigurasi Interface Router - Server
+Lakukan Ping dengan memilih Simple PDU dari PASURUAN DAN SIDOARJO.
+
+* **Konfigurasi Interface Router - Server**
 
 Hal yang sama pada interface Router - Server seperti halnya Router - Client
 
@@ -132,11 +134,23 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayamojokerto.jpg)
 
+Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke MOJOKERTO.
 
-* Penerapan Routing
+* **Subnet Routing**
 
-Routing diterapkan pada antar hardware yang tidak saling berhubungan secara langsung
+Routing ini diterapkan pada antar hardware yang tidak saling berhubungan secara langsung.
 
+Contoh routing ini berupa dari SURABAYA ke SIDOARJO. Buka router SURABAYA dan masukkan pda tab Config, lalu buka static, dan lakukan konfigurasi seperti berikut
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayastatic.jpg)
+
+Maksud pada gambar di atas yaitu *Network* dan *Mask* diisi dengan tujuan Subnet A9, Next Hop diisi dengan IP Interface PASURUAN, dikarenakan untuk menuju subnet A9, terlebih dahulu melalui router PASURUAN. Maka subnet routing telah selesai.
+
+Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke SIDOARJO.
+
+* **Default Routing**
+
+Routing ini diterapkan pada hardware yang memiliki default dan tidak terhubung ke cloud. contohnya dalam hal ini PASURUAN.
 
 *Cisco file* topologi dapat diakses pada link [berikut](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/C12_Topologi%20Modul%204.pkt).
 
@@ -145,7 +159,9 @@ Routing diterapkan pada antar hardware yang tidak saling berhubungan secara lang
 ![soal](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/soal.jpg)
 
 **CLOUD** diberikan IP TUNTAP.
+
 **Server** diberikan IP DMZ.
+
 Berikan memori sebesar **64MB** pada setiap UML.
 
 ## Soal 2
