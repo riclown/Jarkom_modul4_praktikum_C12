@@ -158,6 +158,8 @@ Default berarti Network dan Mask dimasukkan nilai `0.0.0.0` dan `0.0.0.0` dan Ne
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbydefault.jpg)
 
+Lakukan Ping dengan memilih Simple PDU dari **PASURUAN** ke **SURABAYA**
+
 *Cisco file* topologi dapat diakses pada link [berikut](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/C12_Topologi%20Modul%204.pkt).
 
 ## CIDR
