@@ -82,13 +82,13 @@ Setelah itu dapat dibuat bentuk topologinya pada *Cisco (CPT)*.
 
 * **Konfigurasi Interface Router - Router**
 
-Dalam hal ini akan dilakukan konfigurasi interface untuk SURABAYA dan PASURUAN (Subnet A3). Hal pertama yang dilakukan yaitu melihat ethernet pada SURABAYA dan PASURUAN. Melalui gambar topologi, keduanya terhubung oleh SURABAYA (Fa 0/1) dan PASURUAN (Fa 0/0).
+Dalam hal ini akan dilakukan konfigurasi interface untuk **SURABAYA** dan **PASURUAN** (Subnet A3). Hal pertama yang dilakukan yaitu melihat ethernet pada **SURABAYA** dan **PASURUAN**. Melalui gambar topologi, keduanya terhubung oleh **SURABAYA** (Fa 0/1) dan **PASURUAN** (Fa 0/0).
 
-Pada SURABAYA, buka router SURABAYA dan pilih tab Config. Pada bagian Interface (0/1), masukkan `NID Subnet A3 + 1` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
+Pada **SURABAYA**, buka router **SURABAYA** dan pilih tab Config. Pada bagian Interface (0/1), masukkan `NID Subnet A3 + 1` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbyfe01.jpg)
 
-Berikutnya pada PASURUAN, pilih tab Config, dan pada bagian Interface (0/0), masukkan `NID Subnet A3 + 2` dan Netmask:
+Berikutnya pada **PASURUAN**, pilih tab Config, dan pada bagian Interface (0/0), masukkan `NID Subnet A3 + 2` dan Netmask:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruanfe00.jpg)
 
@@ -96,17 +96,17 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayapasuruan.jpg)
 
-Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke PASURUAN.
+Lakukan Ping dengan memilih Simple PDU dari **SURABAYA** ke **PASURUAN**.
 
 * **Konfigurasi Interface Router - Client**
 
-Lakukan konfigurasi interface untuk PASURUAN dan SIDOARJO (Subnet A9). Hal pertama yang dilakukan yaitu melihat ethernet pada PASURUAN dan SIDOARJO. Melalui gambar topologi, keduanya terhubung oleh PASURUAN (Fa 1/0) dan SIDOARJO (Fa 0).
+Lakukan konfigurasi interface untuk **PASURUAN** dan **SIDOARJO** (Subnet A9). Hal pertama yang dilakukan yaitu melihat ethernet pada **PASURUAN** dan **SIDOARJO**. Melalui gambar topologi, keduanya terhubung oleh **PASURUAN** (Fa 1/0) dan **SIDOARJO** (Fa 0).
 
-Pada PASURUAN, buka router PASURUAN dan pilih tab Config. Pada bagian Interface (1/0), masukkan `NID Subnet A9 + 2` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
+Pada **PASURUAN**, buka router **PASURUAN** dan pilih tab Config. Pada bagian Interface (1/0), masukkan `NID Subnet A9 + 2` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruanfe10.jpg)
 
-Berikutnya pada SIDOARJO, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A9 + 1` dan Netmask:
+Berikutnya pada **SIDOARJO**, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A9 + 1` dan Netmask:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sidoarjo.jpg)
 
@@ -114,19 +114,19 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruansidoarjo.jpg)
 
-Lakukan Ping dengan memilih Simple PDU dari PASURUAN DAN SIDOARJO.
+Lakukan Ping dengan memilih Simple PDU dari **PASURUAN** DAN **SIDOARJO**.
 
 * **Konfigurasi Interface Router - Server**
 
 Hal yang sama pada interface Router - Server seperti halnya Router - Client
 
-Lakukan konfigurasi interface untuk SURABAYA dan MOJOKERTO (Subnet A1 - Server). Hal pertama yang dilakukan yaitu melihat ethernet pada SURABAYA dan MOJOKERTO. Melalui gambar topologi, keduanya terhubung oleh SURABAYA (Fa 1/1) dan MOJOKERTO (Fa 0).
+Lakukan konfigurasi interface untuk **SURABAYA** dan **MOJOKERTO** (Subnet A1 - Server). Hal pertama yang dilakukan yaitu melihat ethernet pada **SURABAYA** dan **MOJOKERTO**. Melalui gambar topologi, keduanya terhubung oleh **SURABAYA** (Fa 1/1) dan **MOJOKERTO** (Fa 0).
 
-Pada SURABAYA, buka router SURABAYA dan pilih tab Config. Pada bagian Interface (1/1), masukkan `NID Subnet A1 + 1` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
+Pada **SURABAYA**, buka router **SURABAYA** dan pilih tab Config. Pada bagian Interface (1/1), masukkan `NID Subnet A1 + 1` dan Netmask berdasarkan NID dan Netmask yang ditemukan:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbyfe11.jpg)
 
-Berikutnya pada MOJOKERTO, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A1 + 1` dan Netmask:
+Berikutnya pada **MOJOKERTO**, pilih tab DESKTOP. Pada IP Configuration, masukkan `NID Subnet A1 + 1` dan Netmask:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/mojokerto.jpg)
 
@@ -134,23 +134,31 @@ Sehingga akan diperoleh hasil sebagai berikut:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayamojokerto.jpg)
 
-Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke MOJOKERTO.
+Lakukan Ping dengan memilih Simple PDU dari **SURABAYA** ke **MOJOKERTO**.
 
 * **Subnet Routing**
 
 Routing ini diterapkan pada antar hardware yang tidak saling berhubungan secara langsung.
 
-Contoh routing ini berupa dari SURABAYA ke SIDOARJO. Buka router SURABAYA dan masukkan pda tab Config, lalu buka static, dan lakukan konfigurasi seperti berikut
+Contoh routing ini berupa dari **SURABAYA** ke **SIDOARJO**. Buka router **SURABAYA** dan masukkan pda tab Config, lalu buka static, dan lakukan konfigurasi seperti berikut
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayastatic.jpg)
 
-Maksud pada gambar di atas yaitu *Network* dan *Mask* diisi dengan tujuan Subnet A9, Next Hop diisi dengan IP Interface PASURUAN, dikarenakan untuk menuju subnet A9, terlebih dahulu melalui router PASURUAN. Maka subnet routing telah selesai.
+Maksud pada gambar di atas yaitu *Network* dan *Mask* diisi dengan tujuan Subnet A9, Next Hop diisi dengan IP Interface **PASURUAN**, dikarenakan untuk menuju subnet A9, terlebih dahulu melalui router **PASURUAN**. Maka subnet routing telah selesai.
 
-Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke SIDOARJO.
+Lakukan Ping dengan memilih Simple PDU dari **SURABAYA** ke **SIDOARJO**.
 
 * **Default Routing**
 
-Routing ini diterapkan pada hardware yang memiliki default dan tidak terhubung ke cloud. contohnya dalam hal ini PASURUAN.
+Routing ini diterapkan pada hardware yang memiliki default dan tidak terhubung ke cloud. contohnya dalam hal ini **PASURUAN**.
+
+Buka **PASURUAN** dan buka tab Config pilih Static dan masukkan Network, Mask, Next Hop sebagai berikut:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/passtatic.jpg)
+
+Default berarti Network dan Mask dimasukkan nilai `0.0.0.0` dan `0.0.0.0` dan Next Hop dimasukkan IP Interface menuju router **SURABAYA** dengan Etehernet (0/1). Router **SURABAYA** memiliki tampilan sebagai berikut:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/default.jpg)
 
 *Cisco file* topologi dapat diakses pada link [berikut](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/C12_Topologi%20Modul%204.pkt).
 
@@ -187,7 +195,7 @@ Berikutnya membuat pohon topologi CIDR berdasarkan labelling subnet:
 
 ![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrtree.jpg)
 
-Melalui pohon di atas, dapat diperoleh NID dan Netmasknya serta lakukan pencarian Broadcast ID pada rumus di atas:
+Melalui pohon di atas, dapat diperoleh NID dan Netmasknya serta lakukan pencarian Broadcast ID pada rumus yang tertera sebelumnya:
 
  ________ ___________ _________ ______________ ________________ _______________
 | Subnet | Jumlah IP | Submask |      NID     |     Netmask    | Broadcast ID  |
@@ -658,4 +666,5 @@ route add -net 192.168.128.0 netmask 255.255.252.0 gw 192.168.129.1 # Kediri - T
 
 
 ### Kendala
-* Masih terkendala pada PING di CIDR UML.
+* Masih terkendala pada PING di CIDR UML, akibat address dan gateway yang keliru.
+* File *Cisco* yang sering corrupt dan menyebabkan sulitnya ping antar hardware. Sehingga file CPT harus sering diubuat ulang, serta hardware yang ada pada CPT juga sering terkendala tidak bisa digunakan.
