@@ -46,7 +46,7 @@ Menentukan jumlah IP serta submask yang di tiap subnet, setelah itu dapat ditemu
 
 Setelah mendapatkan jumlah IP dan submask, maka tree VLSM dapat dibuat, dalam hal ini dimulai dari `/19 = 8192`, yang dibagi menjadi 2 yaitu = 4096. Angka 4096 dibagi dengan jumlah IP maksimal yaitu 256, sehingga `4096/256 = 16`. Sehingga diperoleh `192.168.0.0/20` dan `192.168.0.16/20`. Hal ini akan berlangsung sampai seterusnya pada pohon pembagian IP.
 
-![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/vlsmtree.jpg)
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/vlsmtree.png)
 
 Sehingga dari hasil yang ditemukan, akan diperoleh NID untuk setiap subnet. Netmask diambil dari ketentuan modul dan broadcast ID diperoleh dari hitungan `NID + (2^(32-Submask))-1`: (A1 - **MALANG**, A13 - **MOJOKERTO**)
 
@@ -74,20 +74,61 @@ Setelah itu dapat dibuat bentuk topologinya pada *Cisco (CPT)*.
 
 * Konfigurasi Interface Router - Router
 
-Dalam hal ini akan dilakukan konfigurasi interface untuk SURABAYA dan PASURUAN (Subnet A3). Hal pertama yang dilakukan
+Dalam hal ini akan dilakukan konfigurasi interface untuk SURABAYA dan PASURUAN (Subnet A3). Hal pertama yang dilakukan yaitu melihat ethernet pada SURABAYA dan PASURUAN. Melalui gambar topologi, keduanya terhubung oleh SURABAYA (FA 0/1) dan PASURUAN (FA 0/0).
+
+Pada SURABAYA, buka router SURABAYA dan pilih tab Config. Pada bagian Interface (0/1), masukkan NID Subnet A3 + 1 dan Netmask berdasarkan NID dan Netmask yang ditemukan:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/sbyfe01.jpg)
+
+Berikutnya pada PASURUAN, pilih tab Config, dan pada bagian Interface (0/0), masukkan NID Subnet A3 + 2 dan Netmask:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/pasuruanfe00.jpg)
+
+Sehingga akan diperoleh hasil sebagai berikut:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/surabayapasuruan.jpg)
+
+Lakukan Ping dengan memilih Simple PDU dari SURABAYA ke PASURUAN.
 
 * Konfigurasi Interface Router - Client
+
+
 
 * Konfigurasi Interface Router - Server
 
 * Penerapan Routing
 
 Routing diterapkan pada antar hardware yang tidak saling berhubungan secara langsung
+
+
 ## CIDR
 
 ![soal](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/soal.jpg)
 
 ## Soal 2
+
+Hal yang sama pada soal ini, yaitu menentukan subnet pada topologi dan memberikan label pada subnet tersebut sehingga akan diperoleh NID:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidra.png)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrb.jpg)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrc.jpg)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrd.jpg)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidre.jpg)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrf.jpg)
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrg.jpg)
+
+
+Berikutnya membuat pohon topologi CIDR berdasarkan labelling subnet:
+
+![img](https://github.com/riclown/Jarkom_modul4_praktikum_C12/blob/main/img/cidrtree.jpg)
+
+Melalui pohon di atas, dapat diperoleh NID dan Netmasknya serta lakukan pencarian Broadcast ID pada rumus di atas:
 
  ________ ___________ _________ ______________ ________________ _______________
 | Subnet | Jumlah IP | Submask |      NID     |     Netmask    | Broadcast ID  |
@@ -109,6 +150,7 @@ Routing diterapkan pada antar hardware yang tidak saling berhubungan secara lang
 |MALANG   | SERVER   | 30      |10.151.77.108 |255.255.255.252 |10.151.77.111  |
 |CLOUD    | CLOUD    | 30      |10.151.76.52  |255.255.255.252 |10.151.76.55   |
 --------------------------------------------------------------------------------
+
 Sintaks untuk **topo.sh**
 
 ```# Switch
